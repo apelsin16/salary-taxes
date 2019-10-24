@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e78bd25de75d7038f7bda3c490b369ff",
+    "revision": "e9e5b7bc6ff4b237dee8550cc6f8da10",
     "url": "/salary-taxes/build/index.html"
   },
   {
-    "revision": "c32c37141aa430872c4e",
+    "revision": "4eae550d71a55467fa1c",
     "url": "/salary-taxes/build/static/css/main.36497136.chunk.css"
   },
   {
-    "revision": "6b2ee854dc7468390de7",
-    "url": "/salary-taxes/build/static/js/2.a03701bf.chunk.js"
+    "revision": "521dcbe2adc7d7d88c6e",
+    "url": "/salary-taxes/build/static/js/2.702c7d94.chunk.js"
   },
   {
-    "revision": "c32c37141aa430872c4e",
-    "url": "/salary-taxes/build/static/js/main.ff3e76c2.chunk.js"
+    "revision": "4eae550d71a55467fa1c",
+    "url": "/salary-taxes/build/static/js/main.e5404f4c.chunk.js"
   },
   {
     "revision": "2093367edea3dee83434",

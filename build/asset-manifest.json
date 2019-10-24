@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/salary-taxes/build/static/css/main.36497136.chunk.css",
-    "main.js": "/salary-taxes/build/static/js/main.ff3e76c2.chunk.js",
-    "main.js.map": "/salary-taxes/build/static/js/main.ff3e76c2.chunk.js.map",
+    "main.js": "/salary-taxes/build/static/js/main.e5404f4c.chunk.js",
+    "main.js.map": "/salary-taxes/build/static/js/main.e5404f4c.chunk.js.map",
     "runtime-main.js": "/salary-taxes/build/static/js/runtime-main.22c28f03.js",
     "runtime-main.js.map": "/salary-taxes/build/static/js/runtime-main.22c28f03.js.map",
-    "static/js/2.a03701bf.chunk.js": "/salary-taxes/build/static/js/2.a03701bf.chunk.js",
-    "static/js/2.a03701bf.chunk.js.map": "/salary-taxes/build/static/js/2.a03701bf.chunk.js.map",
+    "static/js/2.702c7d94.chunk.js": "/salary-taxes/build/static/js/2.702c7d94.chunk.js",
+    "static/js/2.702c7d94.chunk.js.map": "/salary-taxes/build/static/js/2.702c7d94.chunk.js.map",
     "index.html": "/salary-taxes/build/index.html",
-    "precache-manifest.bb33507920f326277462a11d066de064.js": "/salary-taxes/build/precache-manifest.bb33507920f326277462a11d066de064.js",
+    "precache-manifest.a85d4cf1704a10fe9acb2836a96af712.js": "/salary-taxes/build/precache-manifest.a85d4cf1704a10fe9acb2836a96af712.js",
     "service-worker.js": "/salary-taxes/build/service-worker.js",
     "static/css/main.36497136.chunk.css.map": "/salary-taxes/build/static/css/main.36497136.chunk.css.map"
   }

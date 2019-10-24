@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Container maxWidth="lg">
-          <Router >
+          <Router  basename="/salary-taxes/build">
             <ButtonAppBar />
             <Switch>
               <Route exact path="/" component={Home} />
