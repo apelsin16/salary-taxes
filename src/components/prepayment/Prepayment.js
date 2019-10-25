@@ -115,7 +115,7 @@ export default class Prepayment extends Component {
                           </TableHead>
                           <TableBody>
                           <TableRow>
-                                <TableCell component="th" scope="row" align="center">{flag ? formatNumber.format(withTaxesOne) : formatNumber.format(salaryOne)}</TableCell>
+                                <TableCell component="th" scope="row" align="center">{flag ? formatNumber.format(salaryOne) : formatNumber.format(withTaxesOne)}</TableCell>
                                 <TableCell align="center">{formatNumber.format(ESVOne)}</TableCell>
                                 <TableCell align="center">{formatNumber.format(PDFOOne)}</TableCell>
                                 <TableCell align="center">{formatNumber.format(VZOne)}</TableCell>
@@ -142,7 +142,7 @@ export default class Prepayment extends Component {
                           </TableHead>
                           <TableBody>
                           <TableRow>
-                                <TableCell component="th" scope="row" align="center">{formatNumber.format(withTaxes/workDays*secondPart)}</TableCell>
+                                <TableCell component="th" scope="row" align="center">{flag ? formatNumber.format(salary - salaryOne) : formatNumber.format(withTaxes - withTaxesOne)}</TableCell>
                                 <TableCell align="center">{formatNumber.format(ESV-ESVOne)}</TableCell>
                                 <TableCell align="center">{formatNumber.format(PDFO-PDFOOne)}</TableCell>
                                 <TableCell align="center">{formatNumber.format(VZ-VZOne)}</TableCell>
