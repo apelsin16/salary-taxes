@@ -34,22 +34,6 @@ export default class Home extends React.Component {
             onHandleChange={this.handleChange}
             onHandleInput={this.handleInput}
           />
-
-        {/* {value === 'withTaxes' ? (
-          <CalculatingWithTaxes
-            salary={salary}
-            kindOfCalculating={value}
-            onHandleChange={this.handleChange}
-            onHandleInput={this.handleInput}
-          />
-        ) : (
-          <CalculatingTaxFree
-            salary={salary}
-            kindOfCalculating={value}
-            onHandleChange={this.handleChange}
-            onHandleInput={this.handleInput}
-          />
-        )} */}
       </React.Fragment>
     );
   }

@@ -40,7 +40,7 @@ export default class Prepayment extends Component {
       });
     }
   }
-  
+
   handleChange = event => {
     this.setState(oldValues => ({
       ...oldValues,
@@ -122,8 +122,9 @@ export default class Prepayment extends Component {
           <Box>
             <Grid container>
               <Grid item xs={12}>
+                <Box mb={2}>
                 <Paper>
-                  <Table>
+                  <Table size="small">
                     <TableHead>
                       <TableRow>
                         <TableCell>За першу половину місяця</TableCell>
@@ -181,8 +182,9 @@ export default class Prepayment extends Component {
                     </Typography>
                   </Box>
                 </Paper>
+                </Box>
                 <Paper>
-                  <Table>
+                  <Table size="small">
                     <TableHead>
                       <TableRow>
                         <TableCell>За другу половину місяця</TableCell>

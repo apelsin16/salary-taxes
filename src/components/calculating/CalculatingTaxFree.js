@@ -41,7 +41,7 @@ export default class CalculatingWithTaxes extends Component {
     if (ESV >= maxESV ) ESV = maxESV;
     const taxes = +ESV + +PDFO + +VZ;
     return (
-      <Box>          
+      <Box mb={4}>          
          <Form {...this.props}/>
          { kindOfCalculating === 'withTaxes' ? 
           <h2>Розрахунок заробітної плати і податків із суми нарахованої "грязної" заробітної плати</h2> :
