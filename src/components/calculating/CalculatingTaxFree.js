@@ -29,14 +29,14 @@ export default class CalculatingWithTaxes extends Component {
     
   render() {
     const { salary, kindOfCalculating } = this.props;
-    const withTaxes = salary/80.5*100;
-    let ESV = parseNumber(withTaxes, rateESV);
-    let PDFO = parseNumber(withTaxes, ratePDFO);
-    let VZ = parseNumber(withTaxes, rateVZ)
+    const withTaxes = +parseFloat(Math.round(salary/80.5*100 * 100) / 100).toFixed(2)
+    let ESV = +parseNumber(withTaxes, rateESV);
+    let PDFO = +parseNumber(withTaxes, ratePDFO);
+    let VZ = +parseNumber(withTaxes, rateVZ)
     if (kindOfCalculating === 'withTaxes') {
-      ESV = parseNumber(salary, rateESV);;
-      PDFO = parseNumber(salary, ratePDFO);;
-      VZ = parseNumber(salary, rateVZ);;
+      ESV = +parseNumber(salary, rateESV);;
+      PDFO = +parseNumber(salary, ratePDFO);;
+      VZ = +parseNumber(salary, rateVZ);;
     }
     if (ESV >= maxESV ) ESV = maxESV;
     const taxes = +ESV + +PDFO + +VZ;
@@ -87,12 +87,14 @@ export default class CalculatingWithTaxes extends Component {
                   />
                 </FormGroup>
                 {this.state.prepayment && 
-                  <Prepayment 
+                  <Prepayment  
+                    key={kindOfCalculating}
                     salary={salary} 
                     withTaxes={withTaxes}
                     ESV={ESV}
                     PDFO={PDFO}
                     VZ={VZ}
+                    kindOfCalculating={kindOfCalculating}
                   />
                 }
               </Box>

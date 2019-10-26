@@ -4,7 +4,7 @@ export default class Account extends React.Component {
     render () {
         return (
             <div>
-                Account
+                Цей розділ, поки що знаходиться в розробці 
             </div>
         )
     }
