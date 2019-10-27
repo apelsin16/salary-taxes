@@ -121,7 +121,7 @@ export default class Prepayment extends Component {
         {this.state.workDays !== 0 && this.state.prepaymentDay !== 0 ? (
           <Box>
             <Grid container>
-              <Grid item xs={12}>
+              <Grid item xs={12} zeroMinWidth>
                 <Box mb={2}>
                 <Paper>
                   <Table size="small">

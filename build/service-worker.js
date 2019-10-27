@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/salary-taxes/build/precache-manifest.7ec4a3a3fd3c56257d74a7dd143d70c6.js"
+  "/salary-taxes/build/precache-manifest.1df5bc9726e6b201c84bc506d5c296fb.js"
 );
 
 self.addEventListener('message', (event) => {
