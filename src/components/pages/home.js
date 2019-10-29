@@ -1,6 +1,5 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
-// import CalculatingWithTaxes from '../calculating/CalculatingWithTaxes';
 import CalculatingTaxFree from '../calculating/CalculatingTaxFree';
 
 export default class Home extends React.Component {
@@ -20,9 +19,10 @@ export default class Home extends React.Component {
       salary: event.target.value,
     });
   };
+
   render() {
     const { value, salary } = this.state;
-
+    
     return (
       <React.Fragment>
         <Typography variant="h4" component="h1">

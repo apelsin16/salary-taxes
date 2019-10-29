@@ -13,6 +13,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import './prepayment.css';
 
 const formatNumber = new Intl.NumberFormat('uk-UK', {
   style: 'currency',
@@ -51,13 +52,8 @@ export default class Prepayment extends Component {
   render() {
     const { salary, withTaxes, ESV, PDFO, VZ } = this.props;
     const { workDays, prepaymentDay, flag } = this.state;
-    let salaryOne = +parseFloat(
-      Math.round((salary / workDays) * prepaymentDay * 100) / 100,
-    ).toFixed(2);
-    let withTaxesOne = +parseFloat(
-      Math.round((withTaxes / workDays) * prepaymentDay * 100) / 100,
-    ).toFixed(2);
-    // withTaxes / workDays * prepaymentDay;
+    let salaryOne = +parseFloat(Math.round((salary / workDays) * prepaymentDay * 100) / 100,    ).toFixed(2);
+    let withTaxesOne = +parseFloat(Math.round((withTaxes / workDays) * prepaymentDay * 100) / 100,    ).toFixed(2);
     let ESVOne = (ESV / workDays) * prepaymentDay;
     let PDFOOne = (PDFO / workDays) * prepaymentDay;
     let VZOne = (VZ / workDays) * prepaymentDay;
@@ -123,11 +119,12 @@ export default class Prepayment extends Component {
             <Grid container>
               <Grid item xs={12} zeroMinWidth>
                 <Box mb={2}>
-                <Paper>
-                  <Table size="small">
+                <Paper className="paper">
+                  <Typography component='h4' align='center'>За першу половину місяця</Typography>
+                  <Table size="small" className="table">
                     <TableHead>
                       <TableRow>
-                        <TableCell>За першу половину місяця</TableCell>
+                        <TableCell>З податками</TableCell>
                         <TableCell align="center">
                           Єдиний соціальний внесок
                         </TableCell>
@@ -183,11 +180,12 @@ export default class Prepayment extends Component {
                   </Box>
                 </Paper>
                 </Box>
-                <Paper>
-                  <Table size="small">
+                <Paper className='paper'>
+                  <Typography component='h4' align='center'>За другу половину місяця</Typography>
+                  <Table size="small" className='table'>
                     <TableHead>
                       <TableRow>
-                        <TableCell>За другу половину місяця</TableCell>
+                        <TableCell>З податками</TableCell>
                         <TableCell align="center">
                           Єдиний соціальний внесок
                         </TableCell>

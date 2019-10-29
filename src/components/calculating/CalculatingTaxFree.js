@@ -47,8 +47,8 @@ export default class CalculatingWithTaxes extends Component {
           <h2>Розрахунок заробітної плати і податків із суми нарахованої "грязної" заробітної плати</h2> :
           <h2>Розрахунок заробітної плати та податків від суми "чистої" заробітної плати</h2>}
         
-        <Paper>
-          <Table>
+        <Paper className='paper'>
+          <Table className='table'>
             <TableHead>
               <TableRow>
                 <TableCell>Нарахована заробітна плата</TableCell>
