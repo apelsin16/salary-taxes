@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+
 
 export default class Account extends React.Component {
-    render () {
-        return (
-            <div>
-                Цей розділ, поки що знаходиться в розробці 
-            </div>
-        )
-    }
+
+
+  render() {
+    
+    return (
+      <div>
+        <h1>Розділ знаходиться в розробці</h1>
+      </div>
+    );
+  }
 }
